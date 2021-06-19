@@ -26,6 +26,6 @@ float average(int a[],int l){
     sum+=a[i];
   }
   float avg=(float)sum/l;
-  return=avg;
+  return avg;
 }
   
