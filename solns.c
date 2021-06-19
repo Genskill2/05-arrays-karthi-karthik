@@ -1,5 +1,6 @@
 /* Enter your solutions in this file */
 #include <stdio.h>
+//max
 int max(int a[],int l){
   int max_num=0;
   for(int i=0;i<l;i++){
@@ -9,6 +10,7 @@ int max(int a[],int l){
   }
     return max_num;
   }
+//min
 int min(int a[],int l){
   int min_num=a[0];
   for(int i=0;i<l;i++){
@@ -28,4 +30,27 @@ float average(int a[],int l){
   float avg=(float)sum/l;
   return avg;
 }
-  
+
+int mode(int a[],int b){
+int c=max(a,b);
+int count[c+1];
+for(int m=0;m<=c;m++){
+count[m]=m;
+printf("hi %d\n",count[m]);
+}
+for(int i=0;i<=c;i++){
+int l=0;
+for(int j;j<b;j++){
+if(count[i]==a[j]){
+l++;
+}
+}
+count[i]=l;
+printf("hi %d\n",l);
+}
+int k=max(count,c+1);
+for(int z=0;z<=c;z++){
+if(count[z]==k){
+return z;}
+}}
+
