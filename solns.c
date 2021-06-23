@@ -33,24 +33,28 @@ float average(int a[],int l){
 
 int mode(int a[],int b){
 int c=max(a,b);
+//printf("vallue of c %d\n",c);
 int count[c+1];
 for(int m=0;m<=c;m++){
 count[m]=m;
-printf("hi %d\n",count[m]);
+//printf("hi %d\n",count[m]);
+}
+for(int i=0;i<=c;i++){
+//printf("value of count[%d]=%d\n",i,count[i]);
 }
 for(int i=0;i<=c;i++){
 int l=0;
-for(int j;j<b;j++){
+for(int j=0;j<b;j++){
 if(count[i]==a[j]){
 l++;
 }
 }
 count[i]=l;
-printf("hi %d\n",l);
+//printf("hi %d\n",l);
 }
 int k=max(count,c+1);
 for(int z=0;z<=c;z++){
 if(count[z]==k){
 return z;}
-}}
-
+}
+}
